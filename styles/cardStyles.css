@@ -1,0 +1,40 @@
+/* font stuff */
+@font-face 
+{
+  font-family: MedievalSharp;
+  src: url("../fonts/medieval-sharp-font/MedievalSharp-xOZ5.ttf");
+}
+
+/* container stuff */
+a {
+    all: unset;
+}
+
+/* general card formatting */
+.card {   
+    box-shadow: 0px 0px 0px 0px;
+    padding: 5px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+.card:hover {
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    color: #000000;
+}
+.cardText {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+/* specific item formatting */
+#FoodWars {
+    background-color: #c1759b;
+    font-family: MedievalSharp;
+}
