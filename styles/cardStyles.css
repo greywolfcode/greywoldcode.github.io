@@ -13,8 +13,6 @@ a {
 /* general card formatting */
 .card {   
     padding: 5px;
-    border-radius: 5px;
-    background-color: transparent;
     cursor: pointer;
     width: 300px;
     height: 200px;
@@ -25,10 +23,9 @@ a {
     position: relative;
     width: 100%;
     height: 100%;
-    text-align: center;
     transition: transform 0.8s;
     transform-style: preserve-3d;
-    box-shadow: 5px, 5px, 5px, 5px, rgba(0, 0, 0, 5);
+    border-radius: 5px;
 }
 .card:hover .cardInner:hover{
     transform: rotateY(180deg);
@@ -49,6 +46,10 @@ a {
     align-items: center;
 }
 .cardBack {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     transform: rotateY(180deg);
 
 }
@@ -62,4 +63,11 @@ a {
 #FoodWars {
     background-color: #c1759b;
     font-family: MedievalSharp;
+}
+#Printables {
+    background-color: #404040;
+}
+#Github {
+    background-color: #000000;
+    color: white;
 }
